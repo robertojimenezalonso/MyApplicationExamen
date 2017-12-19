@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    //funcion registrar usuario con email y contraseña
+
     private void registrar(String email, String pass){
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -65,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
     }
+    //funcion iniciar sesision con email y contraseña
+
     private void iniciarSesion(String email, String pass){
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
@@ -78,6 +82,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });;
     }
+
+    //metodos onClick del boton registro y loging
 
     @Override
     public void onClick(View view) {
