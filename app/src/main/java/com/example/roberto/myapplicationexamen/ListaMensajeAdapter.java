@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * Created by roberto on 19/12/17.
  */
 
+
 public class ListaMensajeAdapter extends RecyclerView.Adapter<MensajeViewHolder> {
 
     private ArrayList<String> mensaje;
@@ -39,6 +40,7 @@ public class ListaMensajeAdapter extends RecyclerView.Adapter<MensajeViewHolder>
         return mensaje.size();
     }
 }
+
 
 class MensajeViewHolder extends RecyclerView.ViewHolder{
 
