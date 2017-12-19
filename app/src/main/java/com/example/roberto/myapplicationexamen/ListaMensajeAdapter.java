@@ -32,6 +32,7 @@ public class ListaMensajeAdapter extends RecyclerView.Adapter<MensajeViewHolder>
     @Override
     public void onBindViewHolder(MensajeViewHolder holder, int position) {
         holder.textoMensaje.setText(mensaje.get(position));
+
     }
 
     @Override

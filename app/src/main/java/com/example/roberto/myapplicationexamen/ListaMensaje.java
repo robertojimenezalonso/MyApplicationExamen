@@ -33,6 +33,8 @@ public class ListaMensaje extends Fragment {
         recyclerView=v.findViewById(R.id.listamensaje);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
 
+        // Seteo Noticias
+
         ArrayList<String> mdatos= new ArrayList<>();
         mdatos.add("Noticia 1");
         mdatos.add("Noticia 2");
