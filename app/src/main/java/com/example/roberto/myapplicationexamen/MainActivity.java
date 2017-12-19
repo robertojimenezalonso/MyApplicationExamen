@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     Button  BotonEntrar, BotonEmpezar;
     EditText EditoEmail, EditoPsw;
 
@@ -92,6 +93,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 registrar(emailReg, passReg);
         }
     }
+
+    //metodos onStart-onStop
 
     @Override
     protected void onStart() {
